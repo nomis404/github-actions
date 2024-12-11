@@ -1,0 +1,11 @@
+name: Creating a workflow for udemy
+on: push
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Lint section
+              run: echo "running Lint tests"
+            - name: Printing Hello
+              run: echo "Hello"
