@@ -1,0 +1,9 @@
+name: Listening for issues and proceeding with displaying the details of Github
+on: issues
+
+jobs:
+    displaying-git-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Displaying info
+              run: echo "${{toJson(github)}}"
