@@ -7,4 +7,4 @@ jobs:
         steps:
             - name: Displaying info
               run: |
-                echo "${{toJson(github.event)}}" | grep "login" | awk -F ":" {print $2}
+                echo "${{toJson(github.event)}}" | grep "login" | awk -F ":" '{print $2}'
