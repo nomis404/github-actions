@@ -6,7 +6,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Lint section
-              run: echo "running Lint tests"
-              run: npm lint
+              run: |
+              echo "running Lint tests"
+              npm lint
             - name: Printing Hello
               run: echo "Hello"
