@@ -23,14 +23,14 @@ jobs:
             - name: Running lint tests
               run: |
                 echo "running Lint tests"
-                npm lint
+                npm run lint
 
             - name: Running "Test" tests
               run: |
                 echo "running Test tests"
-                npm test
+                npm run test
 
             - name: Running "Build" tests
               run: |
                 echo "running Build tests"
-                npm build
+                npm run build
