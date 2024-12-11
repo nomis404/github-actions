@@ -6,4 +6,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Displaying info
-              run: echo "${{toJson(github.event)}}"
+              run: |
+                echo "${{toJson(github.event)}}" | grep "login" | awk -F ":" {print $2}
