@@ -7,7 +7,7 @@ jobs:
         steps:
             - name: Lint section
               run: |
-              echo "running Lint tests"
-              npm lint
+                echo "running Lint tests"
+                npm lint
             - name: Printing Hello
               run: echo "Hello"
